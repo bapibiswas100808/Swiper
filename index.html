@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper</title>
+    <!-- Swiper CSS -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <div class="slider-area">
+         <!-- Swiper -->
+    <div class="swiper productSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="single-slide">
+            <img
+            src="img/image.jpg"
+          />
+          <h2>Read More</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="single-slide">
+            <img
+            src="img/image.jpg"
+          />
+          <h2>Read More</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="single-slide">
+            <img
+            src="img/image.jpg"
+          />
+          <h2>Read More</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="single-slide">
+            <img
+            src="img/image.jpg"
+          />
+          <h2>Read More</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="single-slide">
+            <img
+            src="img/image.jpg"
+          />
+          <h2>Read More</h2>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+    </div>
+    <div class="review-area">
+      <!-- Swiper -->
+ <div class="swiper reviewSwiper">
+   <div class="swiper-wrapper">
+     <div class="swiper-slide">
+       <div class="review-slide">
+       <h2>Shop now</h2>
+       <h4>Lorem ipsum dolor sit amet.</h4>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat beatae aliquam eligendi eius amet voluptas.</p>
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <div class="review-slide">
+       <h2>Shop now</h2>
+       <h4>Lorem ipsum dolor sit amet.</h4>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat beatae aliquam eligendi eius amet voluptas.</p>
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <div class="review-slide">
+       <h2>Shop now</h2>
+       <h4>Lorem ipsum dolor sit amet.</h4>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat beatae aliquam eligendi eius amet voluptas.</p>
+       </div>
+     </div>
+   </div>
+   <div class="swiper-button-next"></div>
+   <div class="swiper-button-prev"></div>
+   <div class="swiper-scrollbar"></div>
+ </div>
+ </div>
+ 
+    <!--Swiper JS  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+      var swiper = new Swiper(".productSwiper", {
+        slidesPerView: 1,
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        spaceBetween: 30,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },
+        breakpoints: {
+          769: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      var swiper = new Swiper(".reviewSwiper", {
+        slidesPerView: 1,
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        spaceBetween: 30,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+</script>
+</body>
+</html>
